@@ -18,7 +18,7 @@
 script = ExtResource( 5 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 296, 248 )
+position = Vector2( 225.055, 211.903 )
 
 [node name="platform_0" parent="." instance=ExtResource( 1 )]
 position = Vector2( 336, 352 )
@@ -230,7 +230,7 @@ position = Vector2( 4168, 1832 )
 position = Vector2( -1336, 1856 )
 
 [node name="spike" parent="." instance=ExtResource( 12 )]
-position = Vector2( -22.0845, 215.29 )
+position = Vector2( -402.755, 300.232 )
 
 [node name="Area2D" parent="." instance=ExtResource( 13 )]
 position = Vector2( 469.371, 168.592 )
