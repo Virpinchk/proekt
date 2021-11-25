@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://e.png" type="Texture" id=1]
 [ext_resource path="res://player.gd" type="Script" id=2]
@@ -6,7 +6,13 @@
 [ext_resource path="res://5.png" type="Texture" id=4]
 [ext_resource path="res://q.png" type="Texture" id=5]
 [ext_resource path="res://3.png" type="Texture" id=6]
-[ext_resource path="res://57ee7cfdcea0e1577b983f96.png" type="Texture" id=7]
+[ext_resource path="res://e2.png" type="Texture" id=7]
+[ext_resource path="res://left.png" type="Texture" id=8]
+[ext_resource path="res://jump.png" type="Texture" id=9]
+[ext_resource path="res://rite2.png" type="Texture" id=10]
+[ext_resource path="res://left2.png" type="Texture" id=11]
+[ext_resource path="res://jump2.png" type="Texture" id=12]
+[ext_resource path="res://rite.png" type="Texture" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -36,7 +42,13 @@ extents = Vector2( 34, 52 )
 
 [sub_resource type="RectangleShape2D" id=3]
 custom_solver_bias = 1.0
-extents = Vector2( 100, 567 )
+extents = Vector2( 9, 9 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+[sub_resource type="RectangleShape2D" id=6]
 
 [node name="player" type="KinematicBody2D" groups=["player"]]
 script = ExtResource( 2 )
@@ -81,8 +93,33 @@ __meta__ = {
 }
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Camera2D"]
-position = Vector2( 127.201, 132.452 )
-scale = Vector2( 1.23755, 0.35598 )
-normal = ExtResource( 7 )
-pressed = ExtResource( 7 )
+position = Vector2( 500, 264 )
+scale = Vector2( 8, 8 )
+normal = ExtResource( 9 )
+pressed = ExtResource( 12 )
 shape = SubResource( 3 )
+action = "fump"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2( -830, 264 )
+scale = Vector2( 7, 7 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 11 )
+shape = SubResource( 4 )
+action = "Left"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2( -630, 264 )
+scale = Vector2( 7, 7 )
+normal = ExtResource( 13 )
+pressed = ExtResource( 10 )
+shape = SubResource( 5 )
+action = "Right"
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2( 700, 264 )
+scale = Vector2( 7, 7 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 7 )
+shape = SubResource( 6 )
+action = "eus"
