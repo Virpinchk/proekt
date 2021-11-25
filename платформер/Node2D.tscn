@@ -230,7 +230,16 @@ position = Vector2( 4168, 1832 )
 position = Vector2( -1336, 1856 )
 
 [node name="spike" parent="." instance=ExtResource( 12 )]
-position = Vector2( -402.755, 300.232 )
+position = Vector2( -2524.21, 563.479 )
+
+[node name="spike2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2907.82, 620.365 )
+
+[node name="spike3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 3536.54, 3024.23 )
 
 [node name="Area2D" parent="." instance=ExtResource( 13 )]
 position = Vector2( 469.371, 168.592 )
+
+[node name="platform_15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3595.08, 3118.75 )

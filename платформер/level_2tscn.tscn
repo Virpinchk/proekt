@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://level_1.gd" type="Script" id=1]
 [ext_resource path="res://стрелка.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://islend.tscn" type="PackedScene" id=9]
 [ext_resource path="res://platform.tscn" type="PackedScene" id=10]
 [ext_resource path="res://island3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://spike.tscn" type="PackedScene" id=12]
 
 [node name="level_2" type="Node2D"]
 position = Vector2( 3, -3 )
@@ -189,3 +190,6 @@ position = Vector2( 608, 2248 )
 [node name="portal2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 784, 2256 )
 nextlevel = ExtResource( 4 )
+
+[node name="spike" parent="." instance=ExtResource( 12 )]
+position = Vector2( 98.4716, 188.062 )
